@@ -139,3 +139,19 @@ Read about generic specialization in Swift
 87. Do you think that lazy evaluation is declarative
 88. Do you think that lazy evaluation is dataflow
 89. Go, Rust and Swift are new languages being developed, look at them and decide what is new and different (if anything)
+
+## Interpreted and Compiled
+
+90. Read about the Java and Python bytecode systems, find out how they are generated and then executed
+91. Any language can be interpreted/bytecoded/compiled. Why don't people use C interpreters?
+92. Read about Cambridge Common Lisp, which compiles to C (mixed with bytecode)
+93. The original C++ was actually a C transpiler, read about this
+94. Read about Clojure, which compiles to Java, JavaScript and .NET
+95. Read about Scala, the functional language that compiles to Java bytecode, JavaScript and machine code
+96. Read about Kotlin, a static and implicitly typed, object-oriented, language that compiles to Java bytecode (for Android development)
+97. Real about GraalVM that compiles Python, JavaScript, Ruby, R, LLVM and more to that Java VM
+98. Look at a few languages and determine their usual method of execution
+99. Considers the positives and negatives of doing this in each way (Java to machine code, C to bytecode etc...)
+100. Many people think C is a simpler language, look at [this link](https://www.nayuki.io/page/summary-of-c-cpp-integer-rules)
+101. Look at how C (and similar other languages) treats undefined behaviour
+102. Look at how C (and similar other languages) treats implementation-defined behaviour
