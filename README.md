@@ -1,4 +1,4 @@
-# Comparative Programming Languages - CM30319
+# Comparative Programming Languages - CM30318
 
 # Excercises
 
@@ -155,3 +155,94 @@ Read about generic specialization in Swift
 100. Many people think C is a simpler language, look at [this link](https://www.nayuki.io/page/summary-of-c-cpp-integer-rules)
 101. Look at how C (and similar other languages) treats undefined behaviour
 102. Look at how C (and similar other languages) treats implementation-defined behaviour
+
+## Other Language Features
+
+104. Think about what ```x = 42``` should return
+105. What is the difference between returning two values, and one value which is a pair
+106. Read about IEEE Not a Number (NaN)
+107. Read about unchecked exceptions, such as RuntimeException in Java
+108. How does Python handle errors
+109. Look at thread local values, a concept related to dynamic scope
+110. Look into the optimisations that modern JavaScript uses
+111. How deep does Python allow function calls:
+
+```python
+def a(n):
+    print(n)
+    a(n + 1)
+```
+
+112. Why does Python not support tail-call optimisation
+113. Read about tail-call optimisation in your favourite language
+114. Why can't we do tail-call optimisation by hand for sibling calls
+115. Read about the problems of TCO when a language has destructors
+116. Read about the problems of TCO when a language has dynamic method calls
+117. Read about how people have implemented TCO in Python, Java, etc...
+118. Read about the Y-combinator in the lambda calculus
+119. Read about which languages support first-class continuations in languages
+120. Read about the *continuation passing* style of programming
+121. Read about coroutines, functions that can return more than once
+122. Read about the COMEFROM flow control construct
+
+## Object Oriented Languages
+
+123. Read about the categorisation: Single Responsibility Principle, Encapsulation, Abstraction, Minimal Coupling
+124. Read about the SOLID principles
+125. Compare SEAM, SOLID, and 'Encapsulation, Abstraction, Polymorhphism and Inheritance'
+126. Look at java.lang.reflect
+127. Think about the relationships between set theory, classes and objects, members and instances, subsets and subclasses
+128. Determine the initial class hierarchy for your favourite languages
+129. Compare multimethods with pair (and more generally), product types
+130. Compare adding properties and behaviours dynamically to duck typing
+131. Read about how ECMA 6 versions of JavaScript have classes, but they are just compiled into prototypes and closures
+132. Read about C++20's concepts to constrain templates
+133. Read about common lisp mixins
+134. Read about how Rust uses traits extensively, with inheritance in it's traits, and no parent links in the instances
+135. In a static single-inheritance language, dynamic lookup can be very fast. Read about dispatch tables/virtual method tables/vtables
+136. Read about if your favourite language has support for choosing static and dynamic dispatch
+137. Think about:
+
+```java
+Animal spot;
+if (wombat() > 0) {
+    spot = new Cat();
+} else {
+    spot = new Dog();
+}
+if (spot.hasTail()) {
+    ...
+}
+```
+should .hasTail() use the method from Cat, Dog, or Animal, and can this be done by the compiler or at runtime only?
+
+138. Read about the problem that garbage collected languages have with destructors
+139. Read about the Resource Acquisition Is Initialisation programming idiom to prevent resource leaks
+140. Look up the CLOS algorithm and find some non-monotonic examples
+141. Think about:
+<img width="416" alt="Screenshot 2022-04-08 at 17 02 48" src="https://user-images.githubusercontent.com/75232368/162479778-a0e33da0-b84b-4625-8683-bc8f7ee5e6e4.png">
+
+142. Read about C3 linearisation
+143. Find out about how C++ addresses the diamond problem
+144. Find out about how Eiffel addresses the diamond problem
+145. What happens if you derive from two interfaces and they ask for different signatures for the same method name
+146. Java 8 allows for default methods in interfaces, thus reintroducing the diamond problem. Find out how Java addresses this
+147. Compare traits and mixins
+148. **(Game developers):** Read about the entity-component system design pattern that favours composition over inheritance, used for at least two-decades in game engines
+149. Look at ```type()```, ```dir()```, ```getattr()```, in Python
+150. Think about the bootstrap problem of a MetaObject Protocol
+151. Investigate the Metaobject class in Java
+152. Investigate the metaobject system in Python
+153. Investigate Joose, the JavaScript metaobject system
+154. Investigate Moose, the Perl metaobject system
+
+## The End
+
+155. Read ["Energy Efficiency across Programming Languages"](https://doi.org/10.1145/3136014.3136031) 
+156. Add languages to this chart:
+
+<img width="294" alt="Screenshot 2022-04-08 at 17 10 13" src="https://user-images.githubusercontent.com/75232368/162480942-e110b368-a34b-49ef-803e-ff92cbd747d8.png">
+
+
+
+
